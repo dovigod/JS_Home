@@ -1,9 +1,9 @@
-const express = require('express');
-const dotenv = require('dotenv');
+import app from './app';
 
-dotenv.config();
-
-const app = express();
 const PORT = process.env.PORT;
 
-app.listen(PORT);
+const listeningChecker = () => {
+	console.log(`✅ listening to PORT : ${PORT}`);
+};
+
+app.listen(PORT, listeningChecker);

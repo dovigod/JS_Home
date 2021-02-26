@@ -241,3 +241,6 @@ dist
 
 
 package-lock.json 
+
+
+.babelrc
