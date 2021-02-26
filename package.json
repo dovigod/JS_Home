@@ -2,9 +2,9 @@
 	"name": "js_home",
 	"version": "1.0.0",
 	"description": "making my playground",
-	"main": "index.js",
+	"main": "init.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node init.js"
 	},
 	"repository": {
 		"type": "git",
@@ -20,6 +20,8 @@
 	},
 	"homepage": "https://github.com/dovigod/JS_Home#readme",
 	"dependencies": {
+		"babel-core": "^6.26.3",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1"
 	}
 }
