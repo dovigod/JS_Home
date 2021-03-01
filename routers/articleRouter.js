@@ -4,8 +4,6 @@ import { articleDetail, deleteArticle, editArticle, upload } from '../controller
 
 export const articleRouter = express.Router();
 
-
 articleRouter.get(routes.editArticle, editArticle);
-articleRouter.get(routes.upload, upload);
 articleRouter.get(routes.deleteArticle, deleteArticle);
 articleRouter.get(routes.articleDetail, articleDetail);

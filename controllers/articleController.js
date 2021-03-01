@@ -1,11 +1,18 @@
-export const editArticle = ( req, res) => {res.send("edit article")};
+export const editArticle = (req, res) => {
+	res.render('editArticle', {
+		pageTitle: 'Edit Article'
+	});
+};
 
+export const deleteArticle = (req, res) => {
+	res.render('deleteArticle', {
+		pageTitle: 'Delete Aritcle'
+	});
+};
 
-export const upload = ( req, res) => res.send(" upload");
-
-export const deleteArticle = ( req, res) => res.send("delete article");
-
-export const articleDetail = ( req, res) => res.send("article detail");
-
-
-
+// change page title
+export const articleDetail = (req, res) => {
+	res.render('articleDetail', {
+		pageTitle: 'Article Detail'
+	});
+};

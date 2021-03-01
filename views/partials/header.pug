@@ -1,0 +1,18 @@
+header.header
+    .header_column
+       <object type="image/svg+xml" data="../../image/rat.svg">현재 사용 중인 브라우저는 object 요소를 지원하지 않습니다!</object>
+
+
+    .header_column
+        p.logo_p jsh
+    
+    .header_column
+        form(action=routes.search , method='get')
+            input(type = "text" , placeholder = "검색" , name = "term")
+
+    .header_column
+        ul
+            li
+                a(href=routes.join) Join
+            li
+                a(href=routes.login) Log in

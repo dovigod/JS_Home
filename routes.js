@@ -3,6 +3,7 @@ const HOME = '/';
 const LOGIN = '/login';
 const LOGOUT = '/logout';
 const JOIN = '/join';
+const SEARCH = '/search';
 
 //user
 const USER = '/user';
@@ -23,6 +24,7 @@ const routes = {
 	login: LOGIN,
 	logout: LOGOUT,
 	join: JOIN,
+	search: SEARCH,
 
 	//user
 	user: USER,
