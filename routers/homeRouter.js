@@ -1,9 +1,12 @@
 import express from 'express';
+import { home, join, login, logout } from '../controllers/homeController';
 import routes from '../routes';
 
 export const homeRouter = express.Router();
 
-const homeController = (req, res) => {
-	res.send('im home!!');
-};
-homeRouter.use('/', homeController);
+homeRouter.get('/', home);
+
+homeRouter.get(routes.login, login);
+homeRouter.get(routes.logout, logout);
+homeRouter.get(routes.join, join);
+

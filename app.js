@@ -8,6 +8,9 @@ import helmet from 'helmet';
 import logger from 'morgan';
 import routes from './routes';
 import { homeRouter } from './routers/homeRouter';
+import { articleRouter } from './routers/articleRouter';
+import { userRouter} from './routers/userRouter';
+
 
 const app = express();
 
@@ -18,5 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(logger('dev'));
 
 app.use(routes.home, homeRouter);
+app.use(routes.article, articleRouter);
+app.use(routes.user, userRouter);
 
 export default app;
